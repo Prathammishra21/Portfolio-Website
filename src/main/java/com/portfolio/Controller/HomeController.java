@@ -16,7 +16,7 @@ public class HomeController {
     }
 
     @GetMapping("/Contact")
-    public String contact(){{
+    public String contact(){
         return "contact";
     }
 
