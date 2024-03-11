@@ -22,7 +22,7 @@ public class HomeController {
 
     @GetMapping("/Services")
     public String Services(){
-        return "Services";
+        return "Services";;
     }
 
 }
