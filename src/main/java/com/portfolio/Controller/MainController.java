@@ -10,40 +10,59 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-@RequestMapping("/Blog")
-public class BlogPostController {
+public class MainController {
 
     @Autowired
     private BlogPostService blogPostService;
 
-    @GetMapping
+    @GetMapping("/")
+    public String home() {
+        return "home";
+    }
+
+    @GetMapping("/about")
+    public String about() {
+        return "about";
+    }
+
+    @GetMapping("/services")
+    public String services() {
+        return "services";
+    }
+
+    @GetMapping("/contact")
+    public String contact() {
+        return "contact";
+    }
+
+    @GetMapping("/blog")
     public String getAllBlogPosts(Model model) {
         List<BlogPost> blogPosts = blogPostService.getAllBlogPosts();
         model.addAttribute("blogPosts", blogPosts);
-        return "blogpost-list";
+        return "blog";
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/blog/{id}")
     public String getBlogPostById(@PathVariable Long id, Model model) {
         Optional<BlogPost> blogPost = blogPostService.getBlogPostById(id);
         blogPost.ifPresent(post -> model.addAttribute("blogPost", post));
-        return "blogpost-detail";
+        return "blog";
     }
 
-    @PostMapping
+    @PostMapping("/blog")
     public String createBlogPost(@ModelAttribute("blogPost") BlogPost blogPost) {
         blogPostService.createOrUpdateBlogPost(blogPost);
         return "redirect:/blog";
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/blog/{id}")
     public String updateBlogPost(@PathVariable Long id, @ModelAttribute("blogPost") BlogPost blogPost) {
         blogPost.setId(id);
         blogPostService.createOrUpdateBlogPost(blogPost);
         return "redirect:/blog";
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/blog/{id}")
     public String deleteBlogPost(@PathVariable Long id) {
         blogPostService.deleteBlogPost(id);
         return "redirect:/blog";
