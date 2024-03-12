@@ -2,9 +2,9 @@ package com.portfolio.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-@Entity
 @Data
-@Table
+@Entity
+@Table(name = "blogpost")
 public class BlogPost {
 
     @Id
@@ -16,4 +16,3 @@ public class BlogPost {
     private String content;
 
 }
-
