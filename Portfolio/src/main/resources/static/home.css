@@ -77,7 +77,6 @@ nav ul li:first-child {
 }
 .leftSection .buttons {
     display: flex; /* Display the buttons in a row */
-
 }
 
 .leftSection .btn1,.btn2{
@@ -95,6 +94,16 @@ nav ul li:first-child {
 
 .btn2 {
     margin-left: 50%;
+}
+
+.leftSection .btn1:hover{
+   transform: translateY(-3px);
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.leftSection .btn2:hover{
+   transform: translateY(-3px);
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .rightSection img{
