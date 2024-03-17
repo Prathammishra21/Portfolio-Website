@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: rgb(255, 255, 255);
+    color: rgb(71, 67, 67);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/service.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(102, 102, 161);
+    padding: 0 5%;
+}
+
+nav .left {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 60px;
+    color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(176, 176, 230);
+    font-size: 1.08rem;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+.left {
+    font-size: 1.6rem;
+}
