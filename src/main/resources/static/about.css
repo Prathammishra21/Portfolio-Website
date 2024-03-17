@@ -1,0 +1,161 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    background-image: url('/about.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(102, 102, 161);
+    padding: 0 5%;
+}
+
+nav .left {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 60px;
+    color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(176, 176, 230);
+    font-size: 1.08rem;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+.left {
+    font-size: 1.6rem;
+}
+
+.about {
+    padding: 30px;
+}
+
+.card {
+    max-width: calc(80% ); /* Adjust width to fit two cards in one row */
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    margin: 30px auto; /* Add margin to the right and bottom of each card */
+}
+
+
+.card-header {
+    background-color: #a290ab;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.card-header h2 {
+    margin: 3px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 30px;
+    font-size: 18px;
+}
+
+.card-body p {
+    line-height: 2.4;
+}
+
+.card-body ul {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    line-height: 2.0;
+}
+
+.card-body ul li {
+    margin-bottom: 10px;
+}
+
+.card-body ul li i {
+    margin-right: 5px;
+}
+
+/* Skills Section Styles */
+.progress {
+    margin-bottom: 25px; /* Adjust margin */
+    width: 100%; /* Ensure progress bar takes full width */
+}
+
+.skill {
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+
+/* Interests Section Styles */
+.icon-box {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.icon-box i {
+    margin-bottom: 15px;
+}
+
+.icon-box h3 {
+    font-size: 20px;
+    font-weight: 20;
+    margin: 1px;
+}
+
+.about .card {
+    margin-bottom: 50px; /* Adjust the value as needed */
+}
+
+
+.about .card-body .row {
+    width: 100%;
+}
+
+.about .card-body .col-lg-4,
+.about .card-body .col-lg-6 {
+    flex: 0 0 50%; /* Take 50% width of parent (card-body) */
+    max-width: 50%; /* Same as above */
+}
+
+.about .card-body img {
+    width: 60%; /* Make image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Apply border radius */
+}
