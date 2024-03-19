@@ -1,11 +1,9 @@
-
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    background-image: url('/about.png');
+    background-image: url('/Images/about/about.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
