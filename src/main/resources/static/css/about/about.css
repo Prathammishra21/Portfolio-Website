@@ -88,6 +88,11 @@ nav ul li:first-child {
     margin: 3px;
     font-size: 24px;
     padding: 10px;
+    text-decoration: underline;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 .card-body {
@@ -167,7 +172,7 @@ nav ul li:first-child {
 }
 
 footer {
-    background-color: #333;
+    background-color: #696969;
     color: #fff;
     padding: 20px 0;
     text-align: center;
