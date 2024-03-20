@@ -14,7 +14,9 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -116,7 +118,6 @@ margin-top: 10px;
 margin-bottom: 10px;
 line-height: 1.8em;
 }
-
 
 footer {
 background-color: #333;

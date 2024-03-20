@@ -1,12 +1,20 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-    background-image: url('/Images/about/about.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: rgb(255, 255, 255);
+  color: rgb(71, 67, 67);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('/Images/about/about.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 nav {
@@ -156,4 +164,14 @@ nav ul li:first-child {
     width: 60%; /* Make image fill its container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 15px; /* Apply border radius */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 35px ;
 }
